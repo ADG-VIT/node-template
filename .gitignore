@@ -1,0 +1,9 @@
+# This file is only used when pushing to git
+# It basically tells git to ignore certain files
+# when pushing to the repo
+
+#Node dependencies
+node_modules
+
+# MacBook generates this file
+.DS_Store
