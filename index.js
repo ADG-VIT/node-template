@@ -11,6 +11,11 @@ const config = require('./config');
 // use the routes defined in the routes.js file
 app.use('/', routes);
 
+// this line connects to the mongodb database
+// make sure your server is up and running -_-
+mongoose.connect(config.dburl);
+    
+
 // this function starts the server at the port specified in config.js
 // your server is running on http://127.0.0.1:<port>
 app.listen(config.port, () => {

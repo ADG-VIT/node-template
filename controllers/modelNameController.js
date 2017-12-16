@@ -16,10 +16,6 @@ const mongoose = require('mongoose');
 
 // be a little creative with the name okay?
 function insertDoc(field1Value, field2Value, callback){
-    // this line connects to the mongodb database
-    // make sure your server is up and running -_-
-    mongoose.connect(config.dburl);
-
     // you create new documents as a new object in mongoose
     // look at the model to see how the object is structured
     let newModelInstance = new modelName({
@@ -43,10 +39,6 @@ function insertDoc(field1Value, field2Value, callback){
  * Simple mongoDB
  **/
 function getAllRecords(callback){
-    // this line connects to the mongodb database
-    // make sure your server is up and running -_-
-    mongoose.connect(config.dburl);
-
     /* the basic read operation in mongoDB
      * when you specify an empty object {}
      * the query returns all records 
@@ -62,10 +54,6 @@ function getAllRecords(callback){
 }
 
 function basicQuery(value1, callback){
-    // this line connects to the mongodb database
-    // make sure your server is up and running -_-
-    mongoose.connect(config.dburl);
-    
         /* the basic read operation in mongoDB
          * if you want all records where field1 = value1,
          * the object passed as first argument to find is

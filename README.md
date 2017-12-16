@@ -12,5 +12,6 @@ Helpful links:
 - [Routing using ExpressJS](https://expressjs.com/en/starter/basic-routing.html)
 - [HTTP Methods](https://www.httpwatch.com/httpgallery/methods/)
 - [Model-View-Controller](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
+- [Mongoose](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose)
 
 The documentation is a great place for reference and examples too. :)

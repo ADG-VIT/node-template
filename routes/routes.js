@@ -1,6 +1,6 @@
 /* This file is where you create an API using express
  * and define your routes
- * a route is simple the /something part of a URL
+ * a route is simply the /something part of a URL
  * like something.com/something
  * you can define how you want your server to respond to a
  * request to a route over here
@@ -13,7 +13,13 @@ const bodyParser = require('body-parser');
 // you'll use the controller here to interact with your DB :)
 const modelController = require('../controllers/modelNameController');
 
-// ask your router to use body-parser when it gets requests
+/* ask your router to use body-parser when it gets requests
+ * This is an example of express middleware
+ * middlwares are functions that run before a request reaches 
+ * the route
+ * Each middlware does it's work and calls the next middleware
+ * Hence the order in which you add your middleware is also important
+ **/ 
 router.use(bodyParser.urlencoded({extended: false}));
 router.use(bodyParser.json());
 
