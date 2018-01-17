@@ -45,7 +45,7 @@ router.post('/create', function(req, res){
          * you then send the data in JSON format
          * with appropriate information
          **/
-        if(err) res.status(400).json({
+        if(err) res.status(200).json({
             status: 400,
             info: JSON.stringify(err)
         });
@@ -70,7 +70,7 @@ router.all('/all', (req, res) => {
          * you then send the data in JSON format
          * with appropriate information
          **/
-        if(err) res.status(400).json({
+        if(err) res.status(200).json({
             status: 400,
             loggedIn: false,
             info: JSON.stringify(err)
@@ -100,7 +100,7 @@ router.get('/query', function(req, res) {
          * you then send the data in JSON format
          * with appropriate information
          **/
-        if(err) res.status(400).json({
+        if(err) res.status(200).json({
             status: 400,
             loggedIn: false,
             info: JSON.stringify(err)

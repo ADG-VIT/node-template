@@ -8,6 +8,7 @@ In order to get your project up and running, follow these steps:
 5. Run `node index.js`
 
 Helpful links:
+- [A guide to getting started with Backend Development](https://medium.com/@ajmalsiddiqui21/getting-started-with-backend-development-bfd8299e22e8)
 - [Article on using Mongoose, which helps with MongoDB](https://coursework.vschool.io/mongoose-crud/)
 - [Routing using ExpressJS](https://expressjs.com/en/starter/basic-routing.html)
 - [HTTP Methods](https://www.httpwatch.com/httpgallery/methods/)
