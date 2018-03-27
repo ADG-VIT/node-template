@@ -31,7 +31,7 @@ function insertDoc(field1Value, field2Value, callback){
         // this isn't an easy concept to wrap your head around
         // google :3
         if(err) return callback(err);
-        else return callback(null, "successfully added admin");
+        else return callback(null, "successfully added record");
     });
 }
 

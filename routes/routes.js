@@ -72,13 +72,11 @@ router.all('/all', (req, res) => {
          **/
         if(err) res.status(200).json({
             status: 400,
-            loggedIn: false,
             info: JSON.stringify(err)
         });
         // all worked well here! 
         else res.status(200).json({
             status: 200,
-            loggedIn: true,
             info: JSON.stringify(info)
         });
     });
@@ -102,13 +100,11 @@ router.get('/query', function(req, res) {
          **/
         if(err) res.status(200).json({
             status: 400,
-            loggedIn: false,
             info: JSON.stringify(err)
         });
         // all worked well here! 
         else res.status(200).json({
             status: 200,
-            loggedIn: true,
             info: JSON.stringify(info)
         });
     });
